@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rayan Pirou-Maros | Intégrateur web</title>
+  <meta name="description" content="Portfolio de Rayan Pirou-Maros, étudiant en DSP Intégrateur Web au Cnam de Paris. Recherche un stage du 1er mars au 23 avril 2027.">
+  <meta name="theme-color" content="#14213d">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2314213d'/%3E%3Ctext x='16' y='22' font-family='Arial,sans-serif' font-weight='700' font-size='15' fill='%23e9c57a' text-anchor='middle'%3ERP%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a class="skip" href="#projets">Aller aux projets</a>
+
+  <header class="top">
+    <div class="wrap top-inner">
+      <a href="#" class="mark" aria-label="Accueil">RP</a>
+      <nav aria-label="Navigation principale">
+        <ul class="menu">
+          <li><a href="#projets">Projets</a></li>
+          <li><a href="#parcours">Parcours</a></li>
+          <li><a href="#competences">Compétences</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== ACCUEIL ========== -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-text">
+          <p class="hello">Bonjour, je suis</p>
+          <h1 class="name">Rayan<br>Pirou-Maros</h1>
+          <p class="intro">J'intègre des maquettes en pages web, en HTML, CSS et JavaScript. Étudiant en DSP Intégrateur Web au Cnam de Paris, je cherche mon premier stage.</p>
+          <div class="cta">
+            <a class="btn btn-solid" href="#projets">Voir mes projets</a>
+            <a class="btn btn-line" href="mailto:rayanpirou@gmail.com">M'écrire</a>
+          </div>
+        </div>
+
+        <!-- Fiche d'arrivée : les dates de stage, façon réception d'hôtel -->
+        <aside class="slip" aria-labelledby="slip-title">
+          <div class="slip-head">
+            <p class="slip-kicker">Fiche d'arrivée</p>
+            <h2 id="slip-title" class="slip-title">Stage recherché</h2>
+          </div>
+          <dl class="slip-dates">
+            <div>
+              <dt>Arrivée</dt>
+              <dd><span class="day">01</span><span class="month">mars 2027<br><small>lundi</small></span></dd>
+            </div>
+            <div>
+              <dt>Départ</dt>
+              <dd><span class="day">23</span><span class="month">avril 2027<br><small>vendredi</small></span></dd>
+            </div>
+          </dl>
+          <dl class="slip-rows">
+            <div><dt>Durée</dt><dd>8 semaines</dd></div>
+            <div><dt>Poste</dt><dd>Assistant intégrateur web</dd></div>
+            <div><dt>Secteur</dt><dd>Île-de-France</dd></div>
+            <div><dt>École</dt><dd>Cnam de Paris</dd></div>
+          </dl>
+          <div class="slip-stub">
+            <p>Convention de stage&nbsp;: <a href="mailto:ouverture.sociale@lecnam.net">ouverture.sociale@lecnam.net</a></p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ========== PROJETS ========== -->
+    <section id="projets" class="block">
+      <div class="wrap">
+        <header class="block-head">
+          <h2>Projets</h2>
+          <p>Deux sites réalisés seul pendant mes cours d'HTML et de CSS au Cnam. Ils sont en ligne&nbsp;: vous pouvez les ouvrir et les tester.</p>
+        </header>
+
+        <article class="project">
+          <a class="shot" href="projets/ensemble/index.html" aria-label="Ouvrir le site Ensemble">
+            <span class="shot-bar" aria-hidden="true"><i></i><i></i><i></i></span>
+            <img src="assets/ensemble.jpg" width="1600" height="1000" loading="lazy" alt="Page d'accueil du site Ensemble : titre en pixel art et salon de jeu avec quatre joueurs">
+          </a>
+          <div class="project-body">
+            <h3>Ensemble</h3>
+            <p class="project-sum">Un site de quatre pages sur une idée simple&nbsp;: dans un jeu en coopération, on attend ses amis au lieu d'avancer seul. Univers pixel art, et un quiz «&nbsp;T'es quel coéquipier&nbsp;?&nbsp;».</p>
+            <p class="project-note"><strong>Zéro ligne de JavaScript.</strong> Le quiz calcule le profil du joueur, le menu mobile s'ouvre et les animations suivent le défilement, uniquement en CSS.</p>
+            <ul class="tags" aria-label="Techniques utilisées">
+              <li>HTML sémantique</li>
+              <li>CSS <code>:has()</code></li>
+              <li><code>animation-timeline</code></li>
+              <li>Responsive</li>
+              <li>Mouvement réduit respecté</li>
+            </ul>
+            <div class="project-links">
+              <a class="btn btn-solid" href="projets/ensemble/index.html">Ouvrir le site</a>
+              <a class="btn btn-line" href="https://github.com/LeroyJK/LeroyJK.github.io/tree/main/projets/ensemble">Voir le code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project project-flip">
+          <a class="shot" href="projets/valorant/index.html" aria-label="Ouvrir le guide Valorant">
+            <span class="shot-bar" aria-hidden="true"><i></i><i></i><i></i></span>
+            <img src="assets/valorant.jpg" width="1600" height="1000" loading="lazy" alt="Page d'accueil du guide Valorant : grand titre « Défie tes limites » sur fond sombre et rouge">
+          </a>
+          <div class="project-body">
+            <h3>Valorant, le guide des agents</h3>
+            <p class="project-sum">Un guide de fan d'une page sur le jeu de tir de Riot Games&nbsp;: les règles, les quatre rôles, les 27 agents et les cartes.</p>
+            <p class="project-note"><strong>Les fiches sont générées en JavaScript</strong> à partir d'un tableau de données. On peut chercher un agent, filtrer par rôle et ouvrir sa fiche détaillée avec ses compétences.</p>
+            <ul class="tags" aria-label="Techniques utilisées">
+              <li>JavaScript natif</li>
+              <li>Manipulation du DOM</li>
+              <li>Recherche et filtres</li>
+              <li><code>IntersectionObserver</code></li>
+              <li>Menu accessible</li>
+            </ul>
+            <div class="project-links">
+              <a class="btn btn-solid" href="projets/valorant/index.html">Ouvrir le site</a>
+              <a class="btn btn-line" href="https://github.com/LeroyJK/LeroyJK.github.io/tree/main/projets/valorant">Voir le code</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ========== PARCOURS ========== -->
+    <section id="parcours" class="block block-tint">
+      <div class="wrap">
+        <header class="block-head">
+          <h2>Parcours</h2>
+        </header>
+
+        <div class="cols">
+          <div>
+            <h3 class="col-title">Formation</h3>
+            <ol class="timeline">
+              <li>
+                <p class="when">Depuis sept. 2026</p>
+                <h4>DSP Intégrateur Web (Bac+1)</h4>
+                <p class="where">Cnam de Paris</p>
+                <p>HTML, CSS, JavaScript, algorithmique, graphisme web et UX/UI, bases de données.</p>
+              </li>
+              <li>
+                <p class="when">2025 – 2026</p>
+                <h4>Cycle préparatoire intégré, option Data &amp; IA</h4>
+                <p class="where">ISEP, Paris</p>
+                <p>Mathématiques, physique, programmation, data et intelligence artificielle.</p>
+              </li>
+              <li>
+                <p class="when">2025</p>
+                <h4>Baccalauréat général</h4>
+                <p class="where">Lycée Philippe Kieffer, Cormeilles-en-Parisis</p>
+                <p>Spécialités mathématiques et physique.</p>
+              </li>
+            </ol>
+          </div>
+
+          <div>
+            <h3 class="col-title">Expérience</h3>
+            <ol class="timeline">
+              <li>
+                <p class="when">Étés 2025 et 2026, week-ends dès nov. 2026</p>
+                <h4>Réceptionniste</h4>
+                <p class="where">Hôtels Louis II, Gustave Eiffel, Lilas Blanc et Sophie Germain, Paris</p>
+                <p>Arrivées et départs des clients, accueil et renseignements, gestion des demandes et des imprévus.</p>
+              </li>
+              <li>
+                <p class="when">Été 2024</p>
+                <h4>Assistant chauffagiste</h4>
+                <p class="where">Job d'été</p>
+                <p>Assistance au technicien en intervention, maintenance simple, respect des normes de sécurité.</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== COMPÉTENCES ========== -->
+    <section id="competences" class="block">
+      <div class="wrap">
+        <header class="block-head">
+          <h2>Compétences</h2>
+        </header>
+
+        <div class="skills">
+          <div class="skill">
+            <h3>Intégrer une maquette</h3>
+            <p>Transformer une maquette en pages HTML et CSS propres, accessibles et responsives.</p>
+          </div>
+          <div class="skill">
+            <h3>Rendre une page interactive</h3>
+            <p>Dynamiser une page en JavaScript&nbsp;: données, filtres, fenêtres, menus.</p>
+          </div>
+          <div class="skill">
+            <h3>Développer des services web</h3>
+            <p>Concevoir et programmer des services web, un projet mené en cours.</p>
+          </div>
+          <div class="skill">
+            <h3>Programmer des interactions</h3>
+            <p>Écrire la logique des échanges entre joueur et personnages non-joueurs dans un jeu vidéo.</p>
+          </div>
+        </div>
+
+        <div class="extras">
+          <div>
+            <h3 class="col-title">Langues</h3>
+            <ul class="plain">
+              <li><strong>Anglais</strong> C1, certification Cambridge</li>
+              <li><strong>Darija</strong> langue maternelle</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="col-title">En dehors de l'écran</h3>
+            <ul class="plain">
+              <li><strong>Boxe anglaise</strong> 6 ans de pratique</li>
+              <li><strong>Volley-ball</strong> 3 ans de pratique</li>
+              <li><strong>Éloquence</strong> 2 ans de cours au lycée</li>
+              <li><strong>Jeux de stratégie</strong> Hearthstone, échecs sur Chess.com</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section id="contact" class="contact">
+      <div class="wrap">
+        <h2>Un stage à proposer&nbsp;?</h2>
+        <p class="contact-lead">Écrivez-moi, je réponds rapidement. Mon CV complet est téléchargeable ci-dessous.</p>
+        <ul class="contact-list">
+          <li><a href="mailto:rayanpirou@gmail.com">rayanpirou@gmail.com</a></li>
+          <li><a href="https://www.linkedin.com/in/rayanzakpm11" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/LeroyJK" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="assets/CV_Rayan_PIROU-MAROS.pdf" download>Télécharger mon CV (PDF)</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <p>Rayan Pirou-Maros, Cormeilles-en-Parisis. Site codé à la main en HTML et CSS, hébergé sur GitHub Pages.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

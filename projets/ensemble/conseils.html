@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Quoi faire quand ses amis ne sont pas connectés, et le Pacte du joueur loyal à signer.">
+  <title>Le Pacte | Ensemble</title>
+  <link rel="icon" href="img/sword.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600;700&family=Rubik:wght@400;500;600&family=Silkscreen&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="xp-progress" aria-hidden="true"><span></span></div>
+  <a href="#top" class="to-top" aria-label="Revenir en haut de la page">▲</a>
+
+  <header class="header">
+    <nav class="nav container">
+      <a href="index.html" class="logo"><img class="px" src="img/sword.png" alt="">ENSEMBLE</a>
+      <input type="checkbox" id="nav-check" class="nav-check">
+      <label for="nav-check" class="nav-toggle" aria-label="Ouvrir le menu">≡</label>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="raisons.html">Pourquoi attendre</a></li>
+        <li><a href="conseils.html" class="active">Le Pacte</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="chapter">Guide de survie</span>
+        <h1>Attendre sans s'ennuyer</h1>
+        <p>Attendre ses potes, ça ne veut pas dire fixer l'écran d'accueil. Il y a plein de choses à faire sans avancer dans l'histoire.</p>
+      </div>
+    </section>
+
+    <!-- Quêtes annexes -->
+    <section class="section" style="padding-top: 20px;">
+      <div class="container">
+        <div class="section-title reveal">
+          <span class="chapter">Quêtes annexes</span>
+          <h2>Cinq trucs à faire en les attendant</h2>
+        </div>
+
+        <div class="quests">
+          <div class="panel quest reveal">
+            <div class="slot-icon"><img class="px" src="img/chest.png" alt=""></div>
+            <div>
+              <h3>Ranger l'inventaire</h3>
+              <p>Trier l'équipement, vendre ce qui ne sert à rien, préparer des potions. La prochaine soirée ira plus vite pour tout le monde.</p>
+            </div>
+          </div>
+          <div class="panel quest reveal">
+            <div class="slot-icon"><img class="px" src="img/shield.png" alt=""></div>
+            <div>
+              <h3>Améliorer la base</h3>
+              <p>Construire, décorer, préparer une surprise pour le groupe. Ils seront contents de voir ce que tu as fait pendant leur absence.</p>
+            </div>
+          </div>
+          <div class="panel quest reveal">
+            <div class="slot-icon"><img class="px" src="img/sword.png" alt=""></div>
+            <div>
+              <h3>Jouer sur un autre perso</h3>
+              <p>Tu as envie de progresser ? Crée un personnage à part ou lance un autre jeu. Tu t'amuses, et la partie commune ne bouge pas.</p>
+            </div>
+          </div>
+          <div class="panel quest reveal">
+            <div class="slot-icon"><img class="px" src="img/potion.png" alt=""></div>
+            <div>
+              <h3>Apprendre les mécaniques</h3>
+              <p>Comprendre l'arbre de compétences ou le craft, ça aide toute l'équipe. Tant que tu ne regardes ni l'histoire ni les boss, aucun souci.</p>
+            </div>
+          </div>
+          <div class="panel quest reveal">
+            <div class="slot-icon"><img class="px" src="img/torch.png" alt=""></div>
+            <div>
+              <h3>Organiser la prochaine session</h3>
+              <p>Propose un créneau, relance le groupe. Le meilleur moyen de jouer plus, c'est de jouer plus souvent ensemble.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Le Pacte -->
+    <section class="section section-dark">
+      <div class="container">
+        <div class="book reveal">
+          <h2>Le Pacte du joueur loyal</h2>
+          <p>À lire avant chaque nouvelle partie en groupe.</p>
+          <ol>
+            <li>Je n'avance pas dans l'histoire principale sans mon équipe.</li>
+            <li>Je ne bats aucun boss si mes potes ne sont pas là.</li>
+            <li>Je ne raconte aucune surprise à ceux qui ne l'ont pas encore vue.</li>
+            <li>Si je prends de l'avance sans faire exprès, je préviens et j'attends.</li>
+            <li>J'aide les autres à progresser au lieu de jouer à leur place.</li>
+            <li>Je fais passer le plaisir du groupe avant mon niveau.</li>
+          </ol>
+          <div class="book-sign">
+            <label for="sign-name" class="sign-caption">Signature :</label>
+            <input type="text" id="sign-name" class="signature-input" placeholder="Ton pseudo ici" maxlength="24" autocomplete="off">
+            <input type="checkbox" id="sign-check" class="visually-hidden">
+            <label for="sign-check" class="btn btn-gold sign-btn">Je signe</label>
+            <p class="signed"><span class="seal" aria-hidden="true"></span>Pacte signé. Bienvenue dans l'équipe.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-title center reveal">
+          <span class="chapter">Questions</span>
+          <h2>Les cas compliqués</h2>
+        </div>
+
+        <div class="faq reveal">
+          <details>
+            <summary>Et s'il ne se connecte plus depuis des semaines ?</summary>
+            <p>Demande-lui directement s'il compte reprendre. S'il te dit de continuer, c'est différent : ce qui compte, c'est d'en parler au lieu d'avancer dans son dos.</p>
+          </details>
+          <details>
+            <summary>Farmer de l'XP, ça compte comme avancer ?</summary>
+            <p>Si ça crée un gros écart de niveau, oui. Un peu de farm, ça va. Devenir deux fois plus fort que le reste du groupe, c'est casser l'équilibre.</p>
+          </details>
+          <details>
+            <summary>J'ai avancé sans faire exprès, je fais quoi ?</summary>
+            <p>Dis-le au groupe. Tu peux les accompagner sur le passage sans jouer à leur place, ou le refaire avec eux si le jeu le permet.</p>
+          </details>
+          <details>
+            <summary>Et dans les jeux compétitifs ?</summary>
+            <p>Même idée. Si vous montez en classement à plusieurs, grimper seul peut créer un écart qui vous empêche de rejouer ensemble.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="panel next-mission reveal">
+          <div>
+            <h2>Et toi, t'es quel genre de coéquipier ?</h2>
+            <p>Cinq questions pour le savoir.</p>
+          </div>
+          <a href="quiz.html" class="btn btn-gold">Faire le quiz ▸</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2026 Ensemble · Personne ne reste derrière</p>
+      <ul class="footer-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="raisons.html">Pourquoi attendre</a></li>
+        <li><a href="conseils.html">Le Pacte</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

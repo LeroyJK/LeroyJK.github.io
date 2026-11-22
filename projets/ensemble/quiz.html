@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Quiz : quel genre de coéquipier es-tu dans les jeux en coop ?">
+  <title>Quiz | Ensemble</title>
+  <link rel="icon" href="img/sword.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600;700&family=Rubik:wght@400;500;600&family=Silkscreen&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="xp-progress" aria-hidden="true"><span></span></div>
+  <a href="#top" class="to-top" aria-label="Revenir en haut de la page">▲</a>
+
+  <header class="header">
+    <nav class="nav container">
+      <a href="index.html" class="logo"><img class="px" src="img/sword.png" alt="">ENSEMBLE</a>
+      <input type="checkbox" id="nav-check" class="nav-check">
+      <label for="nav-check" class="nav-toggle" aria-label="Ouvrir le menu">≡</label>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="raisons.html">Pourquoi attendre</a></li>
+        <li><a href="conseils.html">Le Pacte</a></li>
+        <li><a href="quiz.html" class="active">Quiz</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="chapter">5 questions</span>
+        <h1>T'es quel coéquipier ?</h1>
+        <p>Réponds honnêtement, personne ne regarde. Enfin, à part tes potes qui t'attendent peut-être encore au chapitre 2.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 20px;">
+      <div class="container">
+        <div class="panel quiz">
+          <form class="quiz-form">
+            <div class="quiz-progress"><span></span></div>
+
+            <fieldset class="question" id="q1">
+              <legend class="quiz-step">Question 1 / 5</legend>
+              <h2 class="quiz-question">Ton pote n'est pas là ce soir. Tu fais quoi sur votre partie ?</h2>
+              <div class="quiz-answers">
+                <label class="quiz-answer"><input type="radio" name="q1" class="visually-hidden p0"><span class="answer-key">A</span><span>Je continue l'histoire, il rattrapera.</span></label>
+                <label class="quiz-answer"><input type="radio" name="q1" class="visually-hidden p1"><span class="answer-key">B</span><span>J'avance un peu et je lui raconterai.</span></label>
+                <label class="quiz-answer"><input type="radio" name="q1" class="visually-hidden p2"><span class="answer-key">C</span><span>Je fais des quêtes annexes sans toucher à l'histoire.</span></label>
+                <label class="quiz-answer"><input type="radio" name="q1" class="visually-hidden p3"><span class="answer-key">D</span><span>Je lance un autre jeu en attendant.</span></label>
+              </div>
+            </fieldset>
+
+            <fieldset class="question" id="q2">
+              <legend class="quiz-step">Question 2 / 5</legend>
+              <h2 class="quiz-question">Tu es niveau 40, lui niveau 12. Tu réagis comment ?</h2>
+              <div class="quiz-answers">
+                <label class="quiz-answer"><input type="radio" name="q2" class="visually-hidden p0"><span class="answer-key">A</span><span>Je le porte, il a qu'à suivre.</span></label>
+                <label class="quiz-answer"><input type="radio" name="q2" class="visually-hidden p1"><span class="answer-key">B</span><span>Je lui dis de farmer de son côté.</span></label>
+                <label class="quiz-answer"><input type="radio" name="q2" class="visually-hidden p3"><span class="answer-key">C</span><span>Je refais un perso pour repartir avec lui.</span></label>
+                <label class="quiz-answer"><input type="radio" name="q2" class="visually-hidden p2"><span class="answer-key">D</span><span>J'arrête de monter tant qu'il est pas proche.</span></label>
+              </div>
+            </fieldset>
+
+            <fieldset class="question" id="q3">
+              <legend class="quiz-step">Question 3 / 5</legend>
+              <h2 class="quiz-question">Vous arrivez devant le boss final mais il s'est déconnecté.</h2>
+              <div class="quiz-answers">
+                <label class="quiz-answer"><input type="radio" name="q3" class="visually-hidden p0"><span class="answer-key">A</span><span>Je le tape tout seul, trop tentant.</span></label>
+                <label class="quiz-answer"><input type="radio" name="q3" class="visually-hidden p1"><span class="answer-key">B</span><span>Je regarde une vidéo pour voir à quoi il ressemble.</span></label>
+                <label class="quiz-answer"><input type="radio" name="q3" class="visually-hidden p3"><span class="answer-key">C</span><span>Je reste devant la porte et je déco.</span></label>
+                <label class="quiz-answer"><input type="radio" name="q3" class="visually-hidden p2"><span class="answer-key">D</span><span>Je lui écris : « demain soir on le fait ? »</span></label>
+              </div>
+            </fieldset>
+
+            <fieldset class="question" id="q4">
+              <legend class="quiz-step">Question 4 / 5</legend>
+              <h2 class="quiz-question">Il découvre un niveau que tu connais par cœur.</h2>
+              <div class="quiz-answers">
+                <label class="quiz-answer"><input type="radio" name="q4" class="visually-hidden p0"><span class="answer-key">A</span><span>Je lui montre direct le chemin le plus rapide.</span></label>
+                <label class="quiz-answer"><input type="radio" name="q4" class="visually-hidden p2"><span class="answer-key">B</span><span>Je donne un indice seulement s'il bloque.</span></label>
+                <label class="quiz-answer"><input type="radio" name="q4" class="visually-hidden p3"><span class="answer-key">C</span><span>Je le laisse chercher et je profite de ses réactions.</span></label>
+                <label class="quiz-answer"><input type="radio" name="q4" class="visually-hidden p0"><span class="answer-key">D</span><span>Je lui raconte la suite, il faut bien qu'il sache.</span></label>
+              </div>
+            </fieldset>
+
+            <fieldset class="question" id="q5">
+              <legend class="quiz-step">Question 5 / 5</legend>
+              <h2 class="quiz-question">Une bonne soirée de jeu, pour toi, c'est quoi ?</h2>
+              <div class="quiz-answers">
+                <label class="quiz-answer"><input type="radio" name="q5" class="visually-hidden p0"><span class="answer-key">A</span><span>Avancer le plus possible, peu importe avec qui.</span></label>
+                <label class="quiz-answer"><input type="radio" name="q5" class="visually-hidden p1"><span class="answer-key">B</span><span>Gagner, avec les potes si possible.</span></label>
+                <label class="quiz-answer"><input type="radio" name="q5" class="visually-hidden p3"><span class="answer-key">C</span><span>Rigoler et avoir des trucs à se raconter après.</span></label>
+                <label class="quiz-answer"><input type="radio" name="q5" class="visually-hidden p2"><span class="answer-key">D</span><span>Un peu de défi et une bonne ambiance.</span></label>
+              </div>
+            </fieldset>
+
+            <div class="quiz-result">
+              <div class="slot-icon"><img class="px" src="img/chest.png" alt=""></div>
+              <p class="quiz-step">Quiz terminé</p>
+              <h2>Ton score : <span class="score"></span> / 15</h2>
+              <p>Compare avec les profils juste en dessous pour savoir quel coéquipier tu es.</p>
+              <div class="actions">
+                <button type="reset" class="btn">Recommencer</button>
+                <a class="btn btn-gold" href="#profils">Voir mon profil ▾</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Les profils -->
+    <section class="section section-dark" id="profils">
+      <div class="container">
+        <div class="section-title center reveal">
+          <span class="chapter">Le butin</span>
+          <h2>Les trois profils</h2>
+          <p>Rien n'est définitif : on peut toujours monter en rareté.</p>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="panel item-card reveal">
+            <div class="slot-icon"><img class="px" src="img/skull.png" alt=""></div>
+            <span class="rarity common">Commun · 0 à 5 pts</span>
+            <h3>Le Speedrunner Solitaire</h3>
+            <p>Il fonce et il gagne, mais il se retrouve vite seul. Ses potes finissent par le regarder jouer.</p>
+          </article>
+          <article class="panel item-card reveal">
+            <div class="slot-icon"><img class="px" src="img/torch.png" alt=""></div>
+            <span class="rarity rare">Rare · 6 à 10 pts</span>
+            <h3>L'Éclaireur Pressé</h3>
+            <p>Il pense au groupe, mais il a du mal à résister. Encore un peu de patience et ce sera parfait.</p>
+          </article>
+          <article class="panel item-card unique reveal">
+            <div class="slot-icon"><img class="px" src="img/shield.png" alt=""></div>
+            <span class="rarity unique">Unique · 11 à 15 pts</span>
+            <h3>Le Gardien de l'Équipe</h3>
+            <p>Il attend, il partage, il garde l'aventure commune intacte. C'est grâce à lui que le groupe finit le jeu.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="panel next-mission reveal">
+          <div>
+            <h2>Pas encore Gardien ?</h2>
+            <p>Relis les raisons d'attendre, puis signe le Pacte.</p>
+          </div>
+          <div class="actions">
+            <a href="raisons.html" class="btn">Les raisons</a>
+            <a href="conseils.html" class="btn btn-gold">Le Pacte ▸</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2026 Ensemble · Personne ne reste derrière</p>
+      <ul class="footer-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="raisons.html">Pourquoi attendre</a></li>
+        <li><a href="conseils.html">Le Pacte</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

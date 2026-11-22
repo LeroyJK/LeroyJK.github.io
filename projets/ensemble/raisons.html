@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Six raisons d'attendre ses amis dans un jeu en coop, et un simulateur d'écart de niveau.">
+  <title>Pourquoi attendre | Ensemble</title>
+  <link rel="icon" href="img/sword.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600;700&family=Rubik:wght@400;500;600&family=Silkscreen&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="xp-progress" aria-hidden="true"><span></span></div>
+  <a href="#top" class="to-top" aria-label="Revenir en haut de la page">▲</a>
+
+  <header class="header">
+    <nav class="nav container">
+      <a href="index.html" class="logo"><img class="px" src="img/sword.png" alt="">ENSEMBLE</a>
+      <input type="checkbox" id="nav-check" class="nav-check">
+      <label for="nav-check" class="nav-toggle" aria-label="Ouvrir le menu">≡</label>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="raisons.html" class="active">Pourquoi attendre</a></li>
+        <li><a href="conseils.html">Le Pacte</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="chapter">6 raisons</span>
+        <h1>Pourquoi attendre tes potes ?</h1>
+        <p>Tu pourrais tout rusher et finir le jeu en un week-end. Voilà pourquoi ce n'est pas une super idée quand vous avez commencé à plusieurs.</p>
+        <nav class="reasons-nav" aria-label="Sommaire">
+          <a href="#raison-1">I · Les premières fois</a>
+          <a href="#raison-2">II · Le niveau</a>
+          <a href="#raison-3">III · Les spectateurs</a>
+          <a href="#raison-4">IV · Les spoilers</a>
+          <a href="#raison-5">V · Le respect</a>
+          <a href="#raison-6">VI · La durée</a>
+          <a href="#simulateur">Le simulateur</a>
+        </nav>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 20px;">
+      <div class="container reasons">
+
+        <article class="panel reason reveal" id="raison-1">
+          <div class="reason-number">I</div>
+          <div>
+            <h2>Les premières fois ne se rejouent pas</h2>
+            <p>La première fois qu'on tombe sur un boss ou qu'on arrive dans une nouvelle zone, c'est unique. Si tu y vas seul, tes potes le découvriront sans toi. Ou pire, en te regardant faire parce que tu connais déjà.</p>
+            <p>Les moments dont on reparle des années après, c'est ceux où tout le monde criait dans le vocal en même temps.</p>
+            <p class="loot"><img class="px" src="img/emerald.png" alt="">Une découverte à plusieurs vaut largement dix découvertes en solo.</p>
+          </div>
+        </article>
+
+        <article class="panel reason reveal" id="raison-2">
+          <div class="reason-number">II</div>
+          <div>
+            <h2>L'écart de niveau casse le jeu</h2>
+            <p>Si un joueur a 20 niveaux d'avance, soit les ennemis meurent en un coup et c'est ennuyeux, soit ils sont réglés sur son niveau et les autres meurent en boucle.</p>
+            <p>Dans les deux cas, plus personne ne s'amuse vraiment.</p>
+            <p class="loot"><img class="px" src="img/emerald.png" alt="">Le défi, c'est ce qui rend la victoire bonne.</p>
+          </div>
+        </article>
+
+        <article class="panel reason reveal" id="raison-3">
+          <div class="reason-number">III</div>
+          <div>
+            <h2>Personne n'aime regarder les autres jouer</h2>
+            <p>Avec trois heures d'avance, c'est toi qui ouvres les portes, qui ramasses le butin et qui résous les énigmes. Les autres te suivent.</p>
+            <p>En coop, chacun doit pouvoir avoir son moment : le tank qui tient la ligne, le soigneur qui sauve tout le monde au dernier moment, l'archère qui achève le boss.</p>
+            <p class="loot"><img class="px" src="img/emerald.png" alt="">Tu n'es pas le héros de l'histoire, tu fais partie de l'équipe.</p>
+          </div>
+        </article>
+
+        <article class="panel reason reveal" id="raison-4">
+          <div class="reason-number">IV</div>
+          <div>
+            <h2>Les spoilers finissent toujours par sortir</h2>
+            <p>Même en faisant attention, celui qui est en avance finit par lâcher un « attends, tu vas voir après… ». Et la surprise est fichue.</p>
+            <p>Quand tout le monde est au même endroit de l'histoire, on n'a pas besoin de surveiller ce qu'on dit.</p>
+            <p class="loot"><img class="px" src="img/emerald.png" alt="">Le meilleur moyen de ne rien spoiler, c'est de ne rien savoir avant les autres.</p>
+          </div>
+        </article>
+
+        <article class="panel reason reveal" id="raison-5">
+          <div class="reason-number">V</div>
+          <div>
+            <h2>C'est une question de respect</h2>
+            <p>Lancer une partie à plusieurs, c'est un accord, même si personne ne le dit : on fait cette aventure ensemble. Avancer dans son coin, c'est un peu rompre cet accord.</p>
+            <p>Attendre, c'est montrer que ses potes passent avant sa progression.</p>
+            <p class="loot"><img class="px" src="img/emerald.png" alt="">Ils s'en souviendront, crois-moi.</p>
+          </div>
+        </article>
+
+        <article class="panel reason reveal" id="raison-6">
+          <div class="reason-number">VI</div>
+          <div>
+            <h2>Le groupe tient plus longtemps</h2>
+            <p>Un groupe où quelqu'un rushe finit souvent par se séparer : les autres décrochent, ne se connectent plus, et la partie reste abandonnée à moitié.</p>
+            <p>Quand on avance ensemble, on a envie de revenir. On se donne rendez-vous et on finit le jeu.</p>
+            <p class="loot"><img class="px" src="img/emerald.png" alt="">Être le plus fort ne sert à rien s'il n'y a plus personne pour jouer avec toi.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Simulateur -->
+    <section class="section section-dark" id="simulateur">
+      <div class="container">
+        <div class="section-title center reveal">
+          <span class="chapter">À toi de jouer</span>
+          <h2>Le simulateur d'écart de niveau</h2>
+          <p>Choisis l'écart de niveau entre toi et ton pote, et regarde ce qui arrive aux cœurs du groupe.</p>
+        </div>
+
+        <div class="panel simulator reveal">
+          <div class="sim-heads">
+            <img class="px" src="img/head-mage.png" alt="">
+            <span>Toi et ton pote : combien de niveaux d'écart ?</span>
+            <img class="px" src="img/head-archer.png" alt="">
+          </div>
+
+          <div class="gap-choices">
+            <input type="radio" name="gap" id="gap-1" class="visually-hidden" checked>
+            <label for="gap-1">0 à 5</label>
+            <input type="radio" name="gap" id="gap-2" class="visually-hidden">
+            <label for="gap-2">6 à 15</label>
+            <input type="radio" name="gap" id="gap-3" class="visually-hidden">
+            <label for="gap-3">16 à 30</label>
+            <input type="radio" name="gap" id="gap-4" class="visually-hidden">
+            <label for="gap-4">31 à 50</label>
+            <input type="radio" name="gap" id="gap-5" class="visually-hidden">
+            <label for="gap-5">Plus de 50</label>
+          </div>
+
+          <p class="sim-label">Plaisir du groupe</p>
+          <div class="hearts" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+
+          <div class="sim-verdict v1" style="--sim-color: #3ddc76;">
+            <strong>Groupe parfait · 10/10</strong>
+            <p>Même niveau, chacun a son rôle. Les combats sont serrés et les victoires se fêtent à quatre.</p>
+          </div>
+          <div class="sim-verdict v2" style="--sim-color: #a8e05f;">
+            <strong>Ça passe · 8/10</strong>
+            <p>Petit écart, rien de grave. Une ou deux soirées ensemble et c'est réglé.</p>
+          </div>
+          <div class="sim-verdict v3" style="--sim-color: #f0a93b;">
+            <strong>Ça commence à coincer · 6/10</strong>
+            <p>Un des deux porte l'autre. Les mobs sont soit trop faciles, soit trop durs, et ça devient moins drôle.</p>
+          </div>
+          <div class="sim-verdict v4" style="--sim-color: #ff7a3d;">
+            <strong>Mode spectateur · 3/10</strong>
+            <p>Le plus faible suit derrière et ramasse le butin. Il ne joue plus vraiment.</p>
+          </div>
+          <div class="sim-verdict v5" style="--sim-color: #e5484d;">
+            <strong>Groupe en danger · 1/10</strong>
+            <p>L'écart est trop grand pour jouer ensemble. C'est souvent là que la partie finit abandonnée.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="panel next-mission reveal">
+          <div>
+            <h2>Convaincu ?</h2>
+            <p>Regarde quoi faire quand tes potes ne sont pas là, puis signe le Pacte.</p>
+          </div>
+          <a href="conseils.html" class="btn btn-gold">Le Pacte ▸</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2026 Ensemble · Personne ne reste derrière</p>
+      <ul class="footer-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="raisons.html">Pourquoi attendre</a></li>
+        <li><a href="conseils.html">Le Pacte</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

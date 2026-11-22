@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valorant — Le Guide des Agents</title>
+  <meta name="description" content="Guide de fan de Valorant : règles du jeu, rôles, agents et cartes du FPS tactique de Riot Games.">
+  <meta name="theme-color" content="#0f1923">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cpath d='M0 0h40v30l-10 10H0z' fill='%23ff4655'/%3E%3Ctext x='20' y='29' font-family='Impact,sans-serif' font-size='26' fill='white' text-anchor='middle'%3EV%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== EN-TÊTE / NAVIGATION ===== -->
+  <header class="header" id="header">
+    <a href="#accueil" class="logo">
+      <span class="logo-mark">V</span>
+      <span class="logo-text">VALORANT<small>Le guide</small></span>
+    </a>
+    <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" id="nav" aria-label="Navigation principale">
+      <a href="#jeu">Le jeu</a>
+      <a href="#roles">Les rôles</a>
+      <a href="#agents">Les agents</a>
+      <a href="#cartes">Les cartes</a>
+    </nav>
+  </header>
+
+  <!-- ===== HÉRO ===== -->
+  <section class="hero" id="accueil">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="eyebrow">Jeu de tir tactique · 5 contre 5</p>
+      <h1 class="hero-title">
+        <span>DÉFIE</span>
+        <span class="outline">TES</span>
+        <span class="red">LIMITES</span>
+      </h1>
+      <p class="hero-text">
+        Valorant est un FPS tactique développé par <strong>Riot Games</strong>.
+        Précision au tir, stratégie d'équipe et pouvoirs uniques : découvre le jeu
+        et chacun de ses agents.
+      </p>
+      <div class="hero-buttons">
+        <a href="#agents" class="btn btn-primary"><span>Voir les agents</span></a>
+        <a href="#jeu" class="btn btn-ghost"><span>Découvrir le jeu</span></a>
+      </div>
+    </div>
+    <ul class="hero-stats">
+      <li><strong>5v5</strong><span>Format</span></li>
+      <li><strong>13</strong><span>Manches pour gagner</span></li>
+      <li><strong id="agent-count">27</strong><span>Agents</span></li>
+      <li><strong>2020</strong><span>Sortie</span></li>
+    </ul>
+    <a href="#jeu" class="scroll-hint" aria-label="Défiler">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ===== LE JEU ===== -->
+  <section class="section" id="jeu">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-num">01</span>
+        <h2>Le jeu</h2>
+        <p>Un savant mélange entre le tir de précision et des capacités tactiques.</p>
+      </div>
+
+      <div class="game-grid">
+        <article class="game-card reveal">
+          <div class="game-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2"/><path d="M12 1v5M12 18v5M1 12h5M18 12h5"/></svg>
+          </div>
+          <h3>Attaque &amp; Défense</h3>
+          <p>Deux équipes de cinq joueurs s'affrontent. Les <strong>attaquants</strong> doivent poser
+            le <em>Spike</em> (une bombe) sur un site, tandis que les <strong>défenseurs</strong>
+            doivent l'en empêcher ou le désamorcer.</p>
+        </article>
+        <article class="game-card reveal">
+          <div class="game-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2M9 2h6"/></svg>
+          </div>
+          <h3>Les manches</h3>
+          <p>Une partie se joue en manches. La première équipe à remporter <strong>13 manches</strong>
+            gagne. Les équipes changent de camp après 12 manches. En cas d'égalité 12-12, on part en prolongations.</p>
+        </article>
+        <article class="game-card reveal">
+          <div class="game-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg>
+          </div>
+          <h3>L'économie</h3>
+          <p>Au début de chaque manche, tu achètes armes, armures et compétences avec des
+            <strong>crédits</strong> gagnés en éliminant des ennemis, en posant le Spike ou en gagnant des manches.</p>
+        </article>
+        <article class="game-card reveal">
+          <div class="game-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>
+          </div>
+          <h3>Les compétences</h3>
+          <p>Chaque agent possède <strong>4 compétences</strong> : deux à acheter (C et Q), une
+            signature gratuite (E) et un <strong>ultime</strong> (X) qui se charge au fil de la partie.</p>
+        </article>
+      </div>
+
+      <div class="modes reveal">
+        <h3>Les modes de jeu</h3>
+        <div class="modes-list">
+          <span>Non classé</span>
+          <span>Compétition</span>
+          <span>Spike Rush</span>
+          <span>Combat à mort</span>
+          <span>Escalade</span>
+          <span>Swiftplay</span>
+          <span>Team Deathmatch</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LES RÔLES ===== -->
+  <section class="section section-dark" id="roles">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-num">02</span>
+        <h2>Les rôles</h2>
+        <p>Chaque agent appartient à une classe. Une bonne équipe combine les rôles.</p>
+      </div>
+
+      <div class="roles-grid">
+        <article class="role-card reveal" style="--c: #ff4655">
+          <span class="role-symbol">◆</span>
+          <h3>Duellistes</h3>
+          <p>Les fers de lance de l'équipe. Ils entrent les premiers sur les sites et cherchent les éliminations grâce à leur mobilité.</p>
+          <a href="#agents" class="role-link" data-role="duelliste">Voir les duellistes →</a>
+        </article>
+        <article class="role-card reveal" style="--c: #3ec5ad">
+          <span class="role-symbol">▲</span>
+          <h3>Initiateurs</h3>
+          <p>Ils préparent le terrain : révèlent les ennemis, les aveuglent ou les étourdissent pour ouvrir le passage.</p>
+          <a href="#agents" class="role-link" data-role="initiateur">Voir les initiateurs →</a>
+        </article>
+        <article class="role-card reveal" style="--c: #b07cff">
+          <span class="role-symbol">●</span>
+          <h3>Contrôleurs</h3>
+          <p>Les maîtres du terrain. Ils bloquent la vision avec des fumées et découpent la carte pour l'équipe.</p>
+          <a href="#agents" class="role-link" data-role="controleur">Voir les contrôleurs →</a>
+        </article>
+        <article class="role-card reveal" style="--c: #f5c542">
+          <span class="role-symbol">■</span>
+          <h3>Sentinelles</h3>
+          <p>Les gardiens. Ils défendent les sites, surveillent les flancs et ralentissent les attaques ennemies.</p>
+          <a href="#agents" class="role-link" data-role="sentinelle">Voir les sentinelles →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LES AGENTS ===== -->
+  <section class="section" id="agents">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-num">03</span>
+        <h2>Les agents</h2>
+        <p>Clique sur un agent pour découvrir son histoire et ses compétences.</p>
+      </div>
+
+      <div class="toolbar reveal">
+        <div class="filters" id="filters" role="group" aria-label="Filtrer par rôle">
+          <button class="filter active" data-role="all" aria-pressed="true">Tous</button>
+          <button class="filter" data-role="duelliste" aria-pressed="false">Duellistes</button>
+          <button class="filter" data-role="initiateur" aria-pressed="false">Initiateurs</button>
+          <button class="filter" data-role="controleur" aria-pressed="false">Contrôleurs</button>
+          <button class="filter" data-role="sentinelle" aria-pressed="false">Sentinelles</button>
+        </div>
+        <input type="search" id="search" class="search" placeholder="Rechercher un agent…" aria-label="Rechercher un agent" autocomplete="off">
+      </div>
+
+      <div class="agents-grid" id="agents-grid">
+        <!-- Les cartes sont générées par script.js -->
+      </div>
+      <p class="no-result" id="no-result" role="status">Aucun agent ne correspond à ta recherche.</p>
+    </div>
+  </section>
+
+  <!-- ===== LES CARTES ===== -->
+  <section class="section section-dark" id="cartes">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-num">04</span>
+        <h2>Les cartes</h2>
+        <p>Chaque carte a ses particularités qui changent complètement la façon de jouer.</p>
+      </div>
+
+      <div class="maps-grid">
+        <article class="map reveal"><h3>Bind</h3><p>Deux sites, aucun milieu, mais des téléporteurs pour surprendre l'adversaire.</p><span>Maroc</span></article>
+        <article class="map reveal"><h3>Haven</h3><p>La seule carte classique avec <strong>trois sites</strong> de pose du Spike.</p><span>Bhoutan</span></article>
+        <article class="map reveal"><h3>Split</h3><p>Une carte verticale avec des cordes pour grimper et un milieu disputé.</p><span>Japon</span></article>
+        <article class="map reveal"><h3>Ascent</h3><p>Des portes mécaniques pour fermer les sites et un grand milieu ouvert.</p><span>Italie</span></article>
+        <article class="map reveal"><h3>Icebox</h3><p>Des tyroliennes et beaucoup de verticalité dans un port gelé.</p><span>Russie</span></article>
+        <article class="map reveal"><h3>Breeze</h3><p>Des espaces très ouverts et de longues lignes de tir sur une île tropicale.</p><span>Triangle des Bermudes</span></article>
+        <article class="map reveal"><h3>Fracture</h3><p>Les attaquants apparaissent des deux côtés de la carte, en forme de H.</p><span>États-Unis</span></article>
+        <article class="map reveal"><h3>Pearl</h3><p>Une ville sous-marine, sans gadgets, centrée sur le jeu pur.</p><span>Portugal</span></article>
+        <article class="map reveal"><h3>Lotus</h3><p>Trois sites, des portes rotatives et un mur destructible.</p><span>Inde</span></article>
+        <article class="map reveal"><h3>Sunset</h3><p>Les rues ensoleillées de Los Angeles et un milieu très actif.</p><span>États-Unis</span></article>
+        <article class="map reveal"><h3>Abyss</h3><p>La première carte sans murs sur les bords : attention à la chute !</p><span>Norvège</span></article>
+        <article class="map reveal"><h3>Corrode</h3><p>Une forteresse médiévale sur une île, rongée par la radianite.</p><span>France</span></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PIED DE PAGE ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#accueil" class="logo">
+        <span class="logo-mark">V</span>
+        <span class="logo-text">VALORANT<small>Le guide</small></span>
+      </a>
+      <p>Site réalisé dans le cadre d'un cours HTML / CSS / JavaScript.<br>
+        Valorant est une marque de Riot Games. Site de fan non officiel. Images : valorant-api.com.</p>
+      <a href="#accueil" class="to-top">↑ Haut de page</a>
+    </div>
+  </footer>
+
+  <!-- ===== FENÊTRE DÉTAIL D'UN AGENT ===== -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modal-name">
+      <button class="modal-close" data-close aria-label="Fermer">✕</button>
+      <div class="modal-visual">
+        <span class="modal-bigname" id="modal-bigname"></span>
+        <img id="modal-img" alt="">
+      </div>
+      <div class="modal-info">
+        <span class="role-tag" id="modal-role"></span>
+        <h3 id="modal-name"></h3>
+        <p class="modal-origin" id="modal-origin"></p>
+        <p class="modal-bio" id="modal-bio"></p>
+        <h4>Compétences</h4>
+        <ul class="abilities" id="modal-abilities"></ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

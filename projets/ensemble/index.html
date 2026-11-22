@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pourquoi il vaut mieux attendre ses amis plutôt que d'avancer seul dans un jeu en coop.">
+  <title>Ensemble | On attend les copains</title>
+  <link rel="icon" href="img/sword.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600;700&family=Rubik:wght@400;500;600&family=Silkscreen&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="xp-progress" aria-hidden="true"><span></span></div>
+  <a href="#top" class="to-top" aria-label="Revenir en haut de la page">▲</a>
+
+  <header class="header">
+    <nav class="nav container">
+      <a href="index.html" class="logo"><img class="px" src="img/sword.png" alt="">ENSEMBLE</a>
+      <input type="checkbox" id="nav-check" class="nav-check">
+      <label for="nav-check" class="nav-toggle" aria-label="Ouvrir le menu">≡</label>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Accueil</a></li>
+        <li><a href="raisons.html">Pourquoi attendre</a></li>
+        <li><a href="conseils.html">Le Pacte</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Salon de jeu -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1 class="game-title">ENSEMBLE</h1>
+          <p class="game-subtitle">On ne part pas sans les autres</p>
+          <p class="hero-text">Tu connais le pote qui finit le jeu en deux soirs pendant que les autres sont encore au chapitre 2 ? Ce site explique pourquoi c'est dommage, et pourquoi c'est bien plus drôle d'avancer au même rythme.</p>
+          <div class="actions">
+            <a href="raisons.html" class="btn btn-gold">Pourquoi attendre ▸</a>
+            <a href="quiz.html" class="btn">Faire le quiz</a>
+          </div>
+        </div>
+
+        <div class="panel lobby">
+          <div class="lobby-head">
+            <span>Salon · Mission du soir</span>
+            <span class="swap"><span class="now">3/4</span><span class="later">4/4</span></span>
+          </div>
+          <div class="lobby-slot">
+            <img class="px" src="img/head-mage.png" alt="">
+            <div><div class="slot-name">Léo</div><div class="slot-class">Mage · Niv. 24</div></div>
+            <span class="status ready">Prêt</span>
+          </div>
+          <div class="lobby-slot">
+            <img class="px" src="img/head-tank.png" alt="">
+            <div><div class="slot-name">Max</div><div class="slot-class">Tank · Niv. 24</div></div>
+            <span class="status ready">Prêt</span>
+          </div>
+          <div class="lobby-slot">
+            <img class="px" src="img/head-archer.png" alt="">
+            <div><div class="slot-name">Inès</div><div class="slot-class">Archère · Niv. 23</div></div>
+            <span class="status ready">Prêt</span>
+          </div>
+          <div class="lobby-slot empty">
+            <img class="px" src="img/head-healer.png" alt="">
+            <div><div class="slot-name">Sam</div><div class="slot-class">Soigneur · Niv. 24</div></div>
+            <span class="swap">
+              <span class="status waiting now">En attente</span>
+              <span class="status ready later">Prêt</span>
+            </span>
+          </div>
+          <p class="lobby-log">Sam a rejoint la partie</p>
+          <div class="lobby-foot swap">
+            <span class="btn btn-gold is-disabled now" aria-hidden="true">On attend Sam…</span>
+            <a href="raisons.html" class="btn btn-gold later">Lancer la mission ▸</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pourquoi -->
+    <section class="section section-dark">
+      <div class="container">
+        <div class="section-title reveal">
+          <span class="chapter">Chapitre 1</span>
+          <h2>Un jeu en coop, ça se joue en coop</h2>
+          <p>Quand quelqu'un avance seul sur une partie commune, les autres perdent ce qui rendait le jeu sympa. Trois choses en particulier.</p>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="panel item-card reveal">
+            <div class="slot-icon"><img class="px" src="img/heart.png" alt=""></div>
+            <h3>La confiance</h3>
+            <p>Si tu attends tes potes, ils savent qu'ils peuvent rater une soirée sans tout rater. Ça compte.</p>
+          </article>
+          <article class="panel item-card reveal">
+            <div class="slot-icon"><img class="px" src="img/chest.png" alt=""></div>
+            <h3>Les découvertes</h3>
+            <p>Le premier coffre légendaire, le boss qui surprend tout le monde… Ça n'arrive qu'une fois. Autant être là tous ensemble.</p>
+          </article>
+          <article class="panel item-card reveal">
+            <div class="slot-icon"><img class="px" src="img/shield.png" alt=""></div>
+            <h3>L'équilibre</h3>
+            <p>Au même niveau, le tank encaisse, l'archère tire, le soigneur soigne. Tout le monde sert à quelque chose.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chat -->
+    <section class="section">
+      <div class="container chat-section">
+        <div class="section-title reveal">
+          <span class="chapter">Chapitre 2</span>
+          <h2>Le message qu'on aime lire</h2>
+          <p>« Je vous ai attendus. » C'est tout bête, mais ça veut dire que tu tiens plus à tes potes qu'à ton niveau.</p>
+        </div>
+
+        <div class="mc-chat reveal" aria-label="Exemple de discussion entre amis">
+          <div class="chat-lines">
+            <p class="chat-line"><span class="who" style="color: #c79bff;">&lt;Léo&gt;</span> <span class="msg">vous êtes co ce soir ?</span></p>
+            <p class="chat-line"><span class="who" style="color: #ff8f6b;">&lt;Inès&gt;</span> <span class="msg">oui mais j'ai pas joué depuis dimanche</span></p>
+            <p class="chat-line"><span class="who" style="color: #d0d0d0;">&lt;Max&gt;</span> <span class="msg">moi non plus, je vous ai attendus</span></p>
+            <p class="chat-line join">Sam a rejoint la partie</p>
+            <p class="chat-line"><span class="who" style="color: #6be08f;">&lt;Sam&gt;</span> <span class="msg">pareil ! on fait le boss à 21h ?</span></p>
+          </div>
+          <div class="chat-input" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comparaison -->
+    <section class="section section-dark">
+      <div class="container">
+        <div class="section-title center reveal">
+          <span class="chapter">Chapitre 3</span>
+          <h2>Seul dans son coin ou avec le groupe</h2>
+        </div>
+
+        <div class="compare">
+          <div class="panel compare-col bad reveal">
+            <header>
+              <div class="slot-icon"><img class="px" src="img/skull.png" alt=""></div>
+              <h3>Celui qui fonce seul</h3>
+            </header>
+            <ul>
+              <li>Ses potes arrivent dans des zones déjà vidées</li>
+              <li>Il lâche des spoilers sans faire exprès</li>
+              <li>Il tue les boss en trois coups, zéro défi</li>
+              <li>Les autres se lassent et décrochent</li>
+              <li>Au final il est très fort, mais tout seul</li>
+            </ul>
+          </div>
+          <div class="panel compare-col good reveal">
+            <header>
+              <div class="slot-icon"><img class="px" src="img/emerald.png" alt=""></div>
+              <h3>Celui qui attend</h3>
+            </header>
+            <ul>
+              <li>Les découvertes se font à plusieurs</li>
+              <li>Les combats restent tendus jusqu'au bout</li>
+              <li>Chacun a un vrai rôle dans l'équipe</li>
+              <li>On se raconte encore les parties des mois après</li>
+              <li>Le groupe tient jusqu'à la fin du jeu</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pancarte -->
+    <section class="section">
+      <div class="container reveal">
+        <div class="sign">
+          Ici, on attend les copains.
+          <small>Même quand le boss est juste derrière la porte.</small>
+        </div>
+        <div class="sign-post"></div>
+      </div>
+    </section>
+
+    <!-- Suite -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="panel next-mission reveal">
+          <div>
+            <h2>Prochaine mission : le Pacte</h2>
+            <p>Six règles simples pour ne plus laisser personne derrière. Tu peux même le signer.</p>
+          </div>
+          <a href="conseils.html" class="btn btn-gold">Y aller ▸</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2026 Ensemble · Personne ne reste derrière</p>
+      <ul class="footer-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="raisons.html">Pourquoi attendre</a></li>
+        <li><a href="conseils.html">Le Pacte</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
